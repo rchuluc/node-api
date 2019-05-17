@@ -1,0 +1,604 @@
+{
+    "data":
+    [{
+        "name": "Intra-Cellular Therapies Inc.",
+        "mkt_code": "ITCI",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$471.11M",
+        "mkt_variation": "$-4.50"
+      }, {
+        "name": "Agrium Inc.",
+        "mkt_code": "AGU",
+        "mkt_sector": "Basic Industries",
+        "mkt_cap": "$12.97B",
+        "mkt_variation": "$-7.51"
+      }, {
+        "name": "Staples, Inc.",
+        "mkt_code": "SPLS",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$5.75B",
+        "mkt_variation": "$-2.82"
+      }, {
+        "name": "Banco Santander Brasil SA",
+        "mkt_code": "BSBR",
+        "mkt_sector": "Finance",
+        "mkt_cap": "$56.18B",
+        "mkt_variation": "$7.67"
+      }, {
+        "name": "Western Alliance Bancorporation",
+        "mkt_code": "WALA",
+        "mkt_sector": "Finance",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$6.99"
+      }, {
+        "name": "Eversource Energy",
+        "mkt_code": "ES",
+        "mkt_sector": "Public Utilities",
+        "mkt_cap": "$20.04B",
+        "mkt_variation": "$-7.73"
+      }, {
+        "name": "Templeton Dragon Fund, Inc.",
+        "mkt_code": "TDF",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$675.67M",
+        "mkt_variation": "$-8.38"
+      }, {
+        "name": "ZIOPHARM Oncology Inc",
+        "mkt_code": "ZIOP",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$763.03M",
+        "mkt_variation": "$-7.08"
+      }, {
+        "name": "Ares Capital Corporation",
+        "mkt_code": "ARCC",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$6.95B",
+        "mkt_variation": "$-0.38"
+      }, {
+        "name": "CTI Industries Corporation",
+        "mkt_code": "CTIB",
+        "mkt_sector": "Basic Industries",
+        "mkt_cap": "$21.03M",
+        "mkt_variation": "$4.03"
+      }, {
+        "name": "Valley National Bancorp",
+        "mkt_code": "VLY.WS",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$2.04"
+      }, {
+        "name": "Pioneer Floating Rate Trust",
+        "mkt_code": "PHD",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$293.39M",
+        "mkt_variation": "$-7.06"
+      }, {
+        "name": "NVIDIA Corporation",
+        "mkt_code": "NVDA",
+        "mkt_sector": "Technology",
+        "mkt_cap": "$90.21B",
+        "mkt_variation": "$7.70"
+      }, {
+        "name": "Renesola Ltd.",
+        "mkt_code": "SOL",
+        "mkt_sector": "Technology",
+        "mkt_cap": "$49.79M",
+        "mkt_variation": "$-3.27"
+      }, {
+        "name": "PowerShares Water Resources Portfolio",
+        "mkt_code": "PHO",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$814.18M",
+        "mkt_variation": "$6.43"
+      }, {
+        "name": "Eastman Kodak Company",
+        "mkt_code": "KODK.WS",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$4.83"
+      }, {
+        "name": "SiteOne Landscape Supply, Inc.",
+        "mkt_code": "SITE",
+        "mkt_sector": "Consumer Non-Durables",
+        "mkt_cap": "$1.97B",
+        "mkt_variation": "$-2.24"
+      }, {
+        "name": "Five Oaks Investment Corp.",
+        "mkt_code": "OAKS",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$80.86M",
+        "mkt_variation": "$5.98"
+      }, {
+        "name": "Urban Outfitters, Inc.",
+        "mkt_code": "URBN",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$2.09B",
+        "mkt_variation": "$9.31"
+      }, {
+        "name": "Vornado Realty Trust",
+        "mkt_code": "VNO^G",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-4.81"
+      }, {
+        "name": "Vodafone Group Plc",
+        "mkt_code": "VOD",
+        "mkt_sector": "Public Utilities",
+        "mkt_cap": "$76.73B",
+        "mkt_variation": "$-9.75"
+      }, {
+        "name": "Paramount Group, Inc.",
+        "mkt_code": "PGRE",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$3.79B",
+        "mkt_variation": "$-4.02"
+      }, {
+        "name": "Blackrock MuniYield Investment Fund",
+        "mkt_code": "MYF",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$217.64M",
+        "mkt_variation": "$2.18"
+      }, {
+        "name": "Tenax Therapeutics, Inc.",
+        "mkt_code": "TENX",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$14.89M",
+        "mkt_variation": "$8.93"
+      }, {
+        "name": "ImmuCell Corporation",
+        "mkt_code": "ICCC",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$29.97M",
+        "mkt_variation": "$-6.61"
+      }, {
+        "name": "MTGE Investment Corp.",
+        "mkt_code": "MTGE",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$888.48M",
+        "mkt_variation": "$-0.74"
+      }, {
+        "name": "Kayne Anderson MLP Investment Company",
+        "mkt_code": "KYN^F",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-3.50"
+      }, {
+        "name": "SEACOR Marine Holdings Inc.",
+        "mkt_code": "SMHI",
+        "mkt_sector": "Transportation",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$3.20"
+      }, {
+        "name": "BCE, Inc.",
+        "mkt_code": "BCE",
+        "mkt_sector": "Public Utilities",
+        "mkt_cap": "$40.47B",
+        "mkt_variation": "$5.79"
+      }, {
+        "name": "Nuveen S&P 500 Dynamic Overwrite Fund",
+        "mkt_code": "SPXX",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$250.2M",
+        "mkt_variation": "$6.56"
+      }, {
+        "name": "Yahoo! Inc.",
+        "mkt_code": "YHOO",
+        "mkt_sector": "Technology",
+        "mkt_cap": "$50.38B",
+        "mkt_variation": "$8.44"
+      }, {
+        "name": "Advantage Oil & Gas Ltd",
+        "mkt_code": "AAV",
+        "mkt_sector": "Energy",
+        "mkt_cap": "$1.15B",
+        "mkt_variation": "$4.28"
+      }, {
+        "name": "New York Mortgage Trust, Inc.",
+        "mkt_code": "NYMT",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$737.05M",
+        "mkt_variation": "$-7.18"
+      }, {
+        "name": "Cascadian Therapeutics, Inc.",
+        "mkt_code": "CASC",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$168.88M",
+        "mkt_variation": "$-6.72"
+      }, {
+        "name": "Kindred Healthcare, Inc.",
+        "mkt_code": "KND",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$907.72M",
+        "mkt_variation": "$2.69"
+      }, {
+        "name": "VEREIT Inc.",
+        "mkt_code": "VER^F",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$5.54"
+      }, {
+        "name": "First Trust Strategic High Income Fund II",
+        "mkt_code": "FHY",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$112.34M",
+        "mkt_variation": "$4.13"
+      }, {
+        "name": "Cemex S.A.B. de C.V.",
+        "mkt_code": "CX",
+        "mkt_sector": "Capital Goods",
+        "mkt_cap": "$4.5B",
+        "mkt_variation": "$-2.22"
+      }, {
+        "name": "Arrow Financial Corporation",
+        "mkt_code": "AROW",
+        "mkt_sector": "Finance",
+        "mkt_cap": "$442.96M",
+        "mkt_variation": "$1.83"
+      }, {
+        "name": "Avis Budget Group, Inc.",
+        "mkt_code": "CAR",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$1.84B",
+        "mkt_variation": "$4.11"
+      }, {
+        "name": "Banco Santander Chile",
+        "mkt_code": "BSAC",
+        "mkt_sector": "Finance",
+        "mkt_cap": "$11.96B",
+        "mkt_variation": "$-1.57"
+      }, {
+        "name": "Geospace Technologies Corporation",
+        "mkt_code": "GEOS",
+        "mkt_sector": "Capital Goods",
+        "mkt_cap": "$207.39M",
+        "mkt_variation": "$-0.34"
+      }, {
+        "name": "Lumber Liquidators Holdings, Inc",
+        "mkt_code": "LL",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$707.33M",
+        "mkt_variation": "$-9.45"
+      }, {
+        "name": "OGE Energy Corporation",
+        "mkt_code": "OGE",
+        "mkt_sector": "Public Utilities",
+        "mkt_cap": "$7.28B",
+        "mkt_variation": "$-0.43"
+      }, {
+        "name": "Harmony Gold Mining Company Limited",
+        "mkt_code": "HMY",
+        "mkt_sector": "Basic Industries",
+        "mkt_cap": "$734.96M",
+        "mkt_variation": "$5.49"
+      }, {
+        "name": "GasLog Partners LP",
+        "mkt_code": "GLOP^A",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-9.83"
+      }, {
+        "name": "Webster Financial Corporation",
+        "mkt_code": "WBS",
+        "mkt_sector": "Finance",
+        "mkt_cap": "$4.88B",
+        "mkt_variation": "$-9.86"
+      }, {
+        "name": "Barclays PLC",
+        "mkt_code": "BCS^D",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-2.94"
+      }, {
+        "name": "First Trust CEF Income Opportunity ETF",
+        "mkt_code": "FCEF",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$28.08M",
+        "mkt_variation": "$-4.35"
+      }, {
+        "name": "OncoMed Pharmaceuticals, Inc.",
+        "mkt_code": "OMED",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$135.82M",
+        "mkt_variation": "$9.22"
+      }, {
+        "name": "Landstar System, Inc.",
+        "mkt_code": "LSTR",
+        "mkt_sector": "Transportation",
+        "mkt_cap": "$3.68B",
+        "mkt_variation": "$-8.28"
+      }, {
+        "name": "Cytokinetics, Incorporated",
+        "mkt_code": "CYTK",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$614.08M",
+        "mkt_variation": "$-0.80"
+      }, {
+        "name": "Amgen Inc.",
+        "mkt_code": "AMGN",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$119.44B",
+        "mkt_variation": "$6.59"
+      }, {
+        "name": "CYS Investments, Inc.",
+        "mkt_code": "CYS^A",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-0.25"
+      }, {
+        "name": "Systemax Inc.",
+        "mkt_code": "SYX",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$685.51M",
+        "mkt_variation": "$-1.39"
+      }, {
+        "name": "Bristow Group Inc",
+        "mkt_code": "BRS",
+        "mkt_sector": "Transportation",
+        "mkt_cap": "$254.27M",
+        "mkt_variation": "$-9.62"
+      }, {
+        "name": "Valvoline Inc.",
+        "mkt_code": "VVV",
+        "mkt_sector": "Basic Industries",
+        "mkt_cap": "$4.84B",
+        "mkt_variation": "$-1.59"
+      }, {
+        "name": "The Gabelli Healthcare & Wellness Trust",
+        "mkt_code": "GRX",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$208.41M",
+        "mkt_variation": "$-1.93"
+      }, {
+        "name": "Sotherly Hotels Inc.",
+        "mkt_code": "SOHO",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$91.07M",
+        "mkt_variation": "$3.30"
+      }, {
+        "name": "AbbVie Inc.",
+        "mkt_code": "ABBV",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$113.08B",
+        "mkt_variation": "$0.06"
+      }, {
+        "name": "Gulf Island Fabrication, Inc.",
+        "mkt_code": "GIFI",
+        "mkt_sector": "Capital Goods",
+        "mkt_cap": "$152.96M",
+        "mkt_variation": "$-9.61"
+      }, {
+        "name": "Argo Group International Holdings, Ltd.",
+        "mkt_code": "AGII",
+        "mkt_sector": "Finance",
+        "mkt_cap": "$1.84B",
+        "mkt_variation": "$3.84"
+      }, {
+        "name": "Asia Tigers Fund, Inc. (The)",
+        "mkt_code": "GRR",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$42.55M",
+        "mkt_variation": "$-8.82"
+      }, {
+        "name": "Fifth Street Finance Corp.",
+        "mkt_code": "FSCFL",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-5.63"
+      }, {
+        "name": "Arotech Corporation",
+        "mkt_code": "ARTX",
+        "mkt_sector": "Miscellaneous",
+        "mkt_cap": "$92.5M",
+        "mkt_variation": "$-4.32"
+      }, {
+        "name": "STMicroelectronics N.V.",
+        "mkt_code": "STM",
+        "mkt_sector": "Technology",
+        "mkt_cap": "$13.45B",
+        "mkt_variation": "$-6.18"
+      }, {
+        "name": "New Media Investment Group Inc.",
+        "mkt_code": "NEWM",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$724.86M",
+        "mkt_variation": "$-6.05"
+      }, {
+        "name": "Celldex Therapeutics, Inc.",
+        "mkt_code": "CLDX",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$290.24M",
+        "mkt_variation": "$-1.83"
+      }, {
+        "name": "PowerShares DWA Tactical Sector Rotation Portfolio",
+        "mkt_code": "DWTR",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$86.02M",
+        "mkt_variation": "$-0.72"
+      }, {
+        "name": "First Trust Energy Infrastructure Fund",
+        "mkt_code": "FIF",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$326.61M",
+        "mkt_variation": "$7.46"
+      }, {
+        "name": "Astronics Corporation",
+        "mkt_code": "ATRO",
+        "mkt_sector": "Capital Goods",
+        "mkt_cap": "$883.27M",
+        "mkt_variation": "$2.44"
+      }, {
+        "name": "Toll Brothers Inc.",
+        "mkt_code": "TOL",
+        "mkt_sector": "Capital Goods",
+        "mkt_cap": "$6.3B",
+        "mkt_variation": "$-5.96"
+      }, {
+        "name": "Sportsman's Warehouse Holdings, Inc.",
+        "mkt_code": "SPWH",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$240.71M",
+        "mkt_variation": "$1.29"
+      }, {
+        "name": "GGP Inc.",
+        "mkt_code": "GGP",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$21.32B",
+        "mkt_variation": "$-2.47"
+      }, {
+        "name": "Rapid7, Inc.",
+        "mkt_code": "RPD",
+        "mkt_sector": "Technology",
+        "mkt_cap": "$739.26M",
+        "mkt_variation": "$4.67"
+      }, {
+        "name": "Ideal Power Inc.",
+        "mkt_code": "IPWR",
+        "mkt_sector": "Energy",
+        "mkt_cap": "$29.95M",
+        "mkt_variation": "$1.55"
+      }, {
+        "name": "Western Gas Equity Partners, LP",
+        "mkt_code": "WGP",
+        "mkt_sector": "Public Utilities",
+        "mkt_cap": "$9.3B",
+        "mkt_variation": "$-0.10"
+      }, {
+        "name": "WD-40 Company",
+        "mkt_code": "WDFC",
+        "mkt_sector": "Basic Industries",
+        "mkt_cap": "$1.57B",
+        "mkt_variation": "$-5.09"
+      }, {
+        "name": "Fuel Tech, Inc.",
+        "mkt_code": "FTEK",
+        "mkt_sector": "Capital Goods",
+        "mkt_cap": "$21.8M",
+        "mkt_variation": "$-4.15"
+      }, {
+        "name": "Blackrock Municipal 2018 Term Trust",
+        "mkt_code": "BPK",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$238.94M",
+        "mkt_variation": "$4.83"
+      }, {
+        "name": "Arbor Realty Trust",
+        "mkt_code": "ABR^B",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-3.25"
+      }, {
+        "name": "Envision Healthcare Corporation",
+        "mkt_code": "EVHC",
+        "mkt_sector": "Health Care",
+        "mkt_cap": "$6.89B",
+        "mkt_variation": "$9.63"
+      }, {
+        "name": "Teradyne, Inc.",
+        "mkt_code": "TER",
+        "mkt_sector": "Capital Goods",
+        "mkt_cap": "$6.47B",
+        "mkt_variation": "$-0.04"
+      }, {
+        "name": "Invesco Mortgage Capital Inc.",
+        "mkt_code": "IVR^A",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$-1.87"
+      }, {
+        "name": "EnLink Midstream, LLC",
+        "mkt_code": "ENLC",
+        "mkt_sector": "Public Utilities",
+        "mkt_cap": "$2.92B",
+        "mkt_variation": "$-7.95"
+      }, {
+        "name": "Life Storage, Inc.",
+        "mkt_code": "LSI",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$3.5B",
+        "mkt_variation": "$3.86"
+      }, {
+        "name": "ARC Document Solutions, Inc.",
+        "mkt_code": "ARC",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$196.39M",
+        "mkt_variation": "$3.95"
+      }, {
+        "name": "Marvell Technology Group Ltd.",
+        "mkt_code": "MRVL",
+        "mkt_sector": "Technology",
+        "mkt_cap": "$8.71B",
+        "mkt_variation": "$-4.55"
+      }, {
+        "name": "Staffing 360 Solutions, Inc.",
+        "mkt_code": "STAF",
+        "mkt_sector": "Technology",
+        "mkt_cap": "$10.91M",
+        "mkt_variation": "$1.67"
+      }, {
+        "name": "Coach, Inc.",
+        "mkt_code": "COH",
+        "mkt_sector": "Consumer Non-Durables",
+        "mkt_cap": "$13B",
+        "mkt_variation": "$-4.08"
+      }, {
+        "name": "SEACOR Holdings, Inc.",
+        "mkt_code": "CKH",
+        "mkt_sector": "Transportation",
+        "mkt_cap": "$600.56M",
+        "mkt_variation": "$2.31"
+      }, {
+        "name": "Banco Bradesco Sa",
+        "mkt_code": "BBD",
+        "mkt_sector": "Finance",
+        "mkt_cap": "$50.2B",
+        "mkt_variation": "$8.32"
+      }, {
+        "name": "China TechFaith Wireless Communication Technology Limited",
+        "mkt_code": "CNTF",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$33.67M",
+        "mkt_variation": "$3.06"
+      }, {
+        "name": "FIRST REPUBLIC BANK",
+        "mkt_code": "FRC^H",
+        "mkt_sector": "n/a",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$7.54"
+      }, {
+        "name": "Jensyn Acquistion Corp.",
+        "mkt_code": "JSYNR",
+        "mkt_sector": "Finance",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$6.38"
+      }, {
+        "name": "Elkhorn Commodity Rotation Strategy ETF",
+        "mkt_code": "DWAC",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$2.41M",
+        "mkt_variation": "$-0.12"
+      }, {
+        "name": "First Commonwealth Financial Corporation",
+        "mkt_code": "FCF",
+        "mkt_sector": "Finance",
+        "mkt_cap": "$1.26B",
+        "mkt_variation": "$3.13"
+      }, {
+        "name": "AllianzGI Equity & Convertible Income Fund",
+        "mkt_code": "NIE",
+        "mkt_sector": "n/a",
+        "mkt_cap": "$543.65M",
+        "mkt_variation": "$7.16"
+      }, {
+        "name": "Merrill Lynch Depositor, Inc.",
+        "mkt_code": "PIY",
+        "mkt_sector": "Finance",
+        "mkt_cap": "n/a",
+        "mkt_variation": "$0.79"
+      }, {
+        "name": "La Quinta Holdings Inc.",
+        "mkt_code": "LQ",
+        "mkt_sector": "Consumer Services",
+        "mkt_cap": "$1.78B",
+        "mkt_variation": "$4.79"
+      }]
+}
