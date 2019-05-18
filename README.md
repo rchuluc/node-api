@@ -2,29 +2,31 @@
 Node.JS study
 
 <h2>Filters</h2>
+
 Filter by name
 
 <blockquote>
-
-</blockquote>
 GET /name="value"
+</blockquote>
 
 Filter by positive market variation
-<blockquote>
 
+<blockquote>
 GET /up=true
 </blockquote>
 
 Filter by negative market variation
-<blockquote>
 
+<blockquote>
 GET /down=true
 </blockquote>
-Ascending order
-<blockquote>
 
+Ascending order
+
+<blockquote>
 GET /order=asc
 </blockquote>
+
 Descending order
 
 <blockquote>
