@@ -1,83 +1,105 @@
 const express = require('express')
 const app = express() 
-
 const db = require('./data/data.json')
-const data = db.data
 
-const filterBy = (req, res, next) =>{
 
-    filteredData = []
-    
-    if(req.query.up){ //Positive values
-        
-        data.forEach((item) => {
-            const value = item.mkt_variation.split('$')[1]
-            if(value >= 0){
-              filteredData.push(item)    
-            }
-        })
+const filterByName = (data, query) =>{
+    data.length == 0 ? data = db.data : data = filteredData
 
-        if(req.query.order == 'asc'){ //Crescent order
-            
-            filteredData.sort((a,b) => {
-                return a.mkt_variation.split('$')[1] - b.mkt_variation.split('$')[1]
-            })
-
-            req.data = filteredData
-            next()
+    data.forEach((item) => {
+        name = item.name.toLowerCase()
+        query.toLowerCase()
+        if(name.search(query) != -1){
+            filteredData.push(item)
         }
-
-        else if(req.query.order == 'des'){ //Decreasing order
-
-            filteredData.sort((a,b) => {
-                return b.mkt_variation.split('$')[1] - a.mkt_variation.split('$')[1]
-            })
-
-            req.data = filteredData
-            next()
-        }
-
-        req.data = filteredData
-        next()
-
-    } else if(req.query.down){ //Negative values
-
-        data.forEach((item) => {
-            const value = item.mkt_variation.split('$')[1]
-            if(value < 0){
-                filteredData.push(item)
-            }
-        })
-        
-        req.data = filteredData
-        next()
-
-     
-        
-    } else if(req.query.name){ //Search by name
-
-        data.forEach((item) => {
-            name = item.name.toLowerCase()
-            query = req.query.name.toLowerCase()
-            if(name.search(query) != -1){
-                filteredData.push(item)
-            }
-        })
-
-        req.data = filteredData
-        next()
-
-    } else { //All Values
-    
-        req.data = data
-        next()
-    }
+    })
 }
 
-app.use(filterBy);
+const filterByPositive = (data) =>{
+    data.length == 0 ? data = db.data : data = filteredData
+    positiveData = []
+
+    data.forEach((item) => {
+        const value = item.mkt_variation.split('$')[1]
+        if(value >= 0){
+          positiveData.push(item)    
+        }
+    })
+
+    filteredData = positiveData
+}
+
+const filterByNegative = (data) =>{
+    data.length == 0 ? data = db.data : data = filteredData
+    negativeData = []
+
+    data.forEach((item) => {
+        const value = item.mkt_variation.split('$')[1]
+        if(value < 0){
+            negativeData.push(item)
+        }
+    })
+
+    filteredData = negativeData
+}
+
+const orderAscending = (data) =>{
+    data.length == 0 ? data = db.data : data = filteredData
+    orderedData = []
+
+    filteredData = data.sort((a,b) => {
+        return a.mkt_variation.split('$')[1] - b.mkt_variation.split('$')[1]
+    })
+}
+
+const orderDescending = (data) =>{
+    data.length == 0 ? data = db.data : data = filteredData
+    orderedData = []
+
+    filteredData = data.sort((a,b) => {
+        return b.mkt_variation.split('$')[1] - a.mkt_variation.split('$')[1]
+    })
+}
+
+const filters = (req, res, next) =>{
+    filteredData = []
+
+    if(req.query.name){
+        filterByName(filteredData, req.query.name)
+    }
+
+    if(req.query.up){
+        filterByPositive(filteredData)
+    } 
+    
+    if(req.query.down){
+        filterByNegative(filteredData)
+    } 
+    
+    if(req.query.order == 'asc'){
+        orderAscending(filteredData)
+    } 
+    
+    if(req.query.order == 'dec'){
+        orderDescending(filteredData)
+    }
+    if(req.query.all){
+        filteredData = db.data
+    }
+
+    req.data = filteredData
+    next()
+}
+
+app.use(filters);
 
 app.get('/', (req,res) => {
-    res.send(req.data) 
+    if(req.data.length == 0){ //Check if array is empty
+        res.send(null) 
+
+    } else {
+        res.send(req.data) 
+    }
 })
 
 app.listen(3000, ()=> console.log('Listen to 3000'))
