@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const app = express() 
 const db = require('./data/data.json')
 
@@ -91,14 +92,15 @@ const filters = (req, res, next) =>{
     next()
 }
 
-app.use(filters);
+app.use(cors())
+app.use(filters)
 
 app.get('/', (req,res) => {
     if(req.data.length == 0){ //Check if array is empty
-        res.send(null) 
+        res.json({data : null}) 
 
     } else {
-        res.send(req.data) 
+        res.json(req.data) 
     }
 })
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./JS/scripts.js"></script>
+    <title>Market Infromation</title>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <a class="navbar-brand" href="#">Market Caps</a>
+            <form class="form-inline mx-auto">
+                <input class="form-control mr-sm-2" type="search" id="searchField" placeholder="Search" aria-label="Search" autocomplete="off">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </nav>
+    <div class="container">
+        
+
+        <div class="row mt-5 d-flex justify-content-between text-light">
+            <div class="card bg-dark border-info">
+                <div class="card-body p-4">
+                    <div class="row px-3">
+                        <p class="lead pr-2 align-top">Total Invested</p>
+                        <p class="h1">2K</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark border-info">
+                    <div class="card-body p-4">
+                        <div class="row px-3">
+                            <p class="lead pr-2 align-top">Total Gains</p>
+                            <p class="h1">500</p>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="card bg-dark border-info">
+                <div class="card-body p-4">
+                    <div class="row px-3">
+                        <p class="lead pr-2 align-top">Market Variation</p>
+                        <p class="h1">1.2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+                <h4 class= "text-light mt-3">Your wallet</h4>
+        </div>
+
+        <div class="row pt-4">
+           
+            <table id="tableContainer" class="table table-dark table-striped table-hover">
+                <thead class="bg-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>Market code</th>
+                        <th>Name</th>
+                        <th>Market Capital</th>
+                        <th>Indicator</th>
+                    </tr>
+                </thead>
+                <tbody id="walletData">
+                    
+                </tbody>
+            </table>
+            
+            <div class="col pt-4 text-center text-white-50" id="emptyWallet">
+                <i id="emptyWalletIcon" class="fas fa-wallet"></i>
+                <p class="pt-2">Your wallet is empty</p>
+                <button id="searchForActions" class="btn btn-primary"><i class="fas fa-search-dollar mr-2"></i>Search</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
