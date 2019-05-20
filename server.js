@@ -16,6 +16,18 @@ const filterByName = (data, query) =>{
     })
 }
 
+const filterByCode = (data, query) =>{
+    data.length == 0 ? data = db.data : data = filteredData
+
+    data.forEach((item) => {
+        code = item.mkt_code.toLowerCase()
+        query.toLowerCase()
+        if(code.search(query) != -1){
+            filteredData.push(item)
+        }
+    })
+}
+
 const filterByPositive = (data) =>{
     data.length == 0 ? data = db.data : data = filteredData
     positiveData = []
@@ -67,6 +79,10 @@ const filters = (req, res, next) =>{
 
     if(req.query.name){
         filterByName(filteredData, req.query.name)
+    }
+
+    if(req.query.code){
+        filterByCode(filteredData, req.query.code)
     }
 
     if(req.query.up){

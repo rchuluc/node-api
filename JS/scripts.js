@@ -1,41 +1,32 @@
 
 window.onload = () => {
 
-    
     const storage = window.localStorage
+    const wallet = storage.getItem('wallet')
     
-    if(storage.getItem('wallet') == null ){
-        document.getElementById('tableContainer').style.display= 'none'
+    if(wallet == null ){
+        document.getElementById('emptyWallet').classList.remove('d-none')
 
-        
     } else {
-        document.getElementById('tableContainer').style.display= 'block'
-
+       document.getElementById('tableContainer').classList.remove('d-none')
+        populateData(JSON.parse(wallet), 'walletData')
     }
    
-    
-   /* storage.setItem( 'data' , JSON.stringify({
-        "name": "Intra-Cellular Therapies Inc.",
-        "mkt_code": "ITCI",
-        "mkt_sector": "Health Care",
-        "mkt_cap": "$471.11M",
-        "mkt_variation": "$-4.50"
-      }))
-*/
-    
     document.getElementById('searchField').addEventListener('keyup', (event)=> {
         const inputValue = event.target.value
-        if(inputValue.length > 3){
-            getDataByName(inputValue)
+        if(inputValue.length >= 3){
+
+            document.getElementById('home').classList.add('d-none')
+            document.getElementById('search').classList.remove('d-none')
+            document.getElementById('searchTableContainer').classList.remove('d-none')
+            getDataByName(inputValue, 'searchData')
+
+        } else {
+            document.getElementById('home').classList.remove('d-none')
+            document.getElementById('search').classList.add('d-none')
+        
         }
     })
-
-    document.getElementById('searchForActions').addEventListener('click', () =>{
-        console.log('clicked')
-    })
-
-
-
 } 
     
 const getData = () =>{
@@ -47,12 +38,12 @@ const getData = () =>{
         return response.json() 
     })
     .then(data => {
-        console.log(data)
-        populateData(data)
+
+        return data
     })
 }
 
-const getDataByName = (name) =>{
+const getDataByName = (name, container) =>{
     fetch(`http://localhost:3000/?name=${name}`,{
         method: 'GET',
         mode : 'cors'
@@ -61,20 +52,35 @@ const getDataByName = (name) =>{
         return response.json() 
     })
     .then(data => {
-        console.log(data)
-        return data
+
+        populateData(data, container)
     })
 }
 
-const populateData = (data) =>{
+const getDataByCode = (code) =>{
+    fetch(`http://localhost:3000/?code=${code}`,{
+        method: 'GET',
+        mode : 'cors'
+    })
+    .then(response => {
+        return response.json() 
+    })
+    .then(data => {
+        openBuyModal(data[0])
+    })
+}
+
+const populateData = (data, container) =>{
     
-    const tableBody = document.getElementById('walletData')
+    const tableBody = document.getElementById(container)
     let table = ''
     let index = 1
     const arrowUp = 'fas fa-long-arrow-alt-up text-success ml-2'
     const arrowDown = 'fas fa-long-arrow-alt-down text-danger ml-2'
-    
+
     data.forEach(item => {
+        const buyButton = `<td><button id="${item.mkt_code}" onclick="handleClick(this.id)" class="btn btn-outline-primary">add to wallet</button></td>`
+       
         const tableRow = `<tr>
         <th scope="row">${index}</th>
         <td>${item.mkt_code}</td>
@@ -83,7 +89,9 @@ const populateData = (data) =>{
         <td>
         <p>${item.mkt_variation}<i class="${item.mkt_variation.split('$')[1] > 0 ? arrowUp : arrowDown}"></i></p>
         </td>
-        </tr>`
+        ${container === 'searchData' ? buyButton : ''}
+        </tr>
+        `
         table += tableRow
         index ++
     })
@@ -92,6 +100,13 @@ const populateData = (data) =>{
     
 }
 
+const handleClick = (id) =>{
+    getDataByCode(id.toLowerCase())
+}
+
+const openBuyModal = (data) =>{
+    window.alert(data.name)
+}
 
 
 
