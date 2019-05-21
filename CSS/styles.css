@@ -5,3 +5,21 @@
 #searchField{
     width: 40vw
 }
+
+#navbar{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+    background-color: var(--blue) !important;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.blue-border{
+    border: 1px solid var(--blue) !important;
+}
+
+:root{
+    --blue: rgb(43,146,228);
+}
