@@ -1,16 +1,9 @@
 const storage = window.localStorage
-const wallet = storage.getItem('wallet')
 
 window.onload = () => {
-    
-    if(wallet == null ){
-        document.getElementById('emptyWallet').classList.remove('d-none')
 
-    } else {
-       document.getElementById('tableContainer').classList.remove('d-none')
-        populateData(JSON.parse(wallet), 'walletData')
-    }
-   
+    updateWallet()
+
     document.getElementById('searchField').addEventListener('keyup', (event)=> {
         const inputValue = event.target.value
         if(inputValue.length >= 3){
@@ -105,11 +98,35 @@ const handleClick = (id) =>{
 }
 
 const openBuyModal = (data) =>{
-    window.alert(data.name)
+    
+    const wallet = storage.getItem('wallet')
 
-    storage.setItem('wallet', JSON.stringify([data]))
-    populateData(wallet, 'walletData')
+    if(wallet == null) {
+
+        storage.setItem('wallet', JSON.stringify([data]))
+
+    } else {
+        const walletData = JSON.parse(wallet)
+        walletData.push(data)
+        storage.setItem('wallet', JSON.stringify(walletData))
+    }
+    
+    updateWallet()
 }
 
+const updateWallet = () =>{
 
+    const wallet = storage.getItem('wallet')
+    
+    if(wallet == null ){
+        document.getElementById('emptyWallet').classList.remove('d-none')
+
+    } else {
+        
+        document.getElementById('emptyWallet').classList.add('d-none')
+        document.getElementById('tableContainer').classList.remove('d-none')
+        document.getElementById('walletData').innerHTML = ''
+        populateData(JSON.parse(wallet), 'walletData')
+    }
+}
 
