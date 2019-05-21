@@ -1,8 +1,7 @@
+const storage = window.localStorage
+const wallet = storage.getItem('wallet')
 
 window.onload = () => {
-
-    const storage = window.localStorage
-    const wallet = storage.getItem('wallet')
     
     if(wallet == null ){
         document.getElementById('emptyWallet').classList.remove('d-none')
@@ -19,6 +18,7 @@ window.onload = () => {
             document.getElementById('home').classList.add('d-none')
             document.getElementById('search').classList.remove('d-none')
             document.getElementById('searchTableContainer').classList.remove('d-none')
+            document.getElementById('searchData').innerHTML = ''
             getDataByName(inputValue, 'searchData')
 
         } else {
@@ -106,6 +106,9 @@ const handleClick = (id) =>{
 
 const openBuyModal = (data) =>{
     window.alert(data.name)
+
+    storage.setItem('wallet', JSON.stringify([data]))
+    populateData(wallet, 'walletData')
 }
 
 
