@@ -45,7 +45,6 @@ const getDataByName = (name, container) =>{
         return response.json() 
     })
     .then(data => {
-
         populateData(data, container)
     })
 }

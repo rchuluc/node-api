@@ -23,3 +23,19 @@
 :root{
     --blue: rgb(43,146,228);
 }
+
+tbody > tr{
+    cursor: pointer;
+}
+
+#searchWallet{
+    width: 150px;
+    transition: 250ms width ease-out, 300ms background ease-out;
+
+}
+
+#searchWallet:active, #searchWallet:focus{
+    width: 350px;
+    background-color: #f8f9fa !important;
+    transition: 250ms width ease-in, 300ms background ease-in;
+}

@@ -19,7 +19,7 @@
             </nav>
     <div class="container">
         
-            <ol class="breadcrumb bg-dark text-white-50 mt-1">
+            <ol class="breadcrumb bg-dark text-white-50 mt-1 hide-print">
                 <li class="breadcrumb-item" aria-current="page">Home</li>
             </ol>
 
@@ -53,13 +53,16 @@
                 </div>
             </div>
     
-            <div class="row pt-5">
-                    <h4 class= "text-light mt-3">Your wallet</h4>
-            </div>
+            <div class="d-flex justify-content-between mt-5 pt-5 mr-n3">
+                    <h4 class= "text-light align-self-center">Your wallet</h4>
+                    <form class="form-inline">
+                        <input class="form-control bg-transparent" type="search" id="searchWallet" placeholder="Search" aria-label="Search" autocomplete="off">
+                    </form>            
+                </div>
     
             <div class="row pt-4">
         
-                <table id="tableContainer" class="table table-dark table-striped table-hover d-none">
+                <table id="tableContainer" class="table table-dark table-striped table-hover d-none show-print">
                     <thead class="bg-secondary">
                         <tr>
                             <th>#</th>
