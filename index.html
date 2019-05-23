@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="./JS/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <title>Market Infromation</title>
 </head>
 <body class="bg-dark">
@@ -25,38 +26,53 @@
 
         <div id="home" class="">
             <div class="row mt-5 d-flex justify-content-between text-light">
-                <div class="card bg-transparent blue-border">
-                    <div class="card-body p-4">
-                        <div class="row px-3">
-                            <p class="lead pr-2 align-top">Total Invested</p>
-                            <p class="h1">2K</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="card bg-transparent blue-border">
+
+                <div class="col">
+                    <div class="card bg-transparent blue-border">
                         <div class="card-body p-4">
                             <div class="row px-3">
-                                <p class="lead pr-2 align-top">Total Gains</p>
-                                <p class="h1">500</p>
+                                <p class="lead pr-2 align-top">Total Invested</p>
+                                <p class="h1"></p>
                             </div>
                         </div>
                     </div>
-    
-                <div class="card bg-transparent blue-border">
-                    <div class="card-body p-4">
-                        <div class="row px-3">
-                            <p class="lead pr-2 align-top">Market Variation</p>
-                            <p class="h1">1.2</p>
+
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent blue-border">
+                            <div class="card-body p-4">
+                                <div class="row px-3">
+                                    <p class="lead pr-2 align-top">Total Gains</p>
+                                    <p class="h1"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent blue-border">
+                        <div class="card-body p-4">
+                            <div class="row px-3">
+                                <p class="lead pr-2 align-top">Market Variation</p>
+                                <p class="h1"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                </div>
+
+                <div class="row mt-5">
+                    <canvas id="chart" height="100"></canvas>
+                </div>
+
+    
+    
     
             <div class="d-flex justify-content-between mt-5 pt-5 mr-n3">
                     <h4 class= "text-light align-self-center">Your wallet</h4>
                     <form class="form-inline">
-                        <input class="form-control bg-transparent" type="search" id="searchWallet" placeholder="Search" aria-label="Search" autocomplete="off">
+                        <input class="form-control bg-transparent" type="search" id="searchWallet" placeholder="Find action" aria-label="Search" autocomplete="off">
                     </form>            
                 </div>
     

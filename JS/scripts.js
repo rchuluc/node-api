@@ -3,6 +3,7 @@ const storage = window.localStorage
 window.onload = () => {
 
     updateWallet()
+    createChart()
 
     document.getElementById('searchField').addEventListener('keyup', (event)=> {
         const inputValue = event.target.value
@@ -129,3 +130,35 @@ const updateWallet = () =>{
     }
 }
 
+const createChart = () =>{
+    const ctx = document.getElementById('chart').getContext('2d');
+    let gradient = ctx.createLinearGradient(0, 0, 0, 350)
+    gradient.addColorStop(0, 'rgba(43,146,228, 1)')
+    gradient.addColorStop(1, 'rgba(43,146,228, 0)')
+
+    const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: gradient,
+            borderColor: [
+
+                'rgba(255, 255, 255, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+}

@@ -25,7 +25,7 @@
 }
 
 tbody > tr{
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 #searchWallet{
@@ -39,3 +39,5 @@ tbody > tr{
     background-color: #f8f9fa !important;
     transition: 250ms width ease-in, 300ms background ease-in;
 }
+
+
