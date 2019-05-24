@@ -4,6 +4,11 @@ window.onload = () => {
 
     updateWallet()
     createChart()
+    handleSearch()
+
+} 
+
+const handleSearch = () =>{
 
     document.getElementById('searchField').addEventListener('keyup', (event)=> {
         const inputValue = event.target.value
@@ -21,8 +26,9 @@ window.onload = () => {
         
         }
     })
-} 
-    
+}
+
+
 const getData = () =>{
     fetch('http://localhost:3000/?all=true',{
         method: 'GET',
@@ -38,6 +44,7 @@ const getData = () =>{
 }
 
 const getDataByName = (name, container) =>{
+    showSpinner()
     fetch(`http://localhost:3000/?name=${name}`,{
         method: 'GET',
         mode : 'cors'
@@ -46,7 +53,12 @@ const getDataByName = (name, container) =>{
         return response.json() 
     })
     .then(data => {
+        hideSpinner()
         populateData(data, container)
+    })
+    .catch((error) => {
+        hideSpinner()
+        handleFetchError()
     })
 }
 
@@ -60,6 +72,9 @@ const getDataByCode = (code) =>{
     })
     .then(data => {
         openBuyModal(data[0])
+    })
+    .catch(() => {
+        console.log('err')
     })
 }
 
@@ -161,4 +176,43 @@ const createChart = () =>{
         }
     }
 });
+}
+
+const handleFetchError = () =>{
+    const tableBody = document.getElementById('searchTableContainer')
+    const errContainer = document.getElementById('err')
+    tableBody.classList.add('d-none')
+    errContainer.innerHTML= `
+    <div class="col pt-4 text-center text-white-50" id="errorMessage">
+    <i id="emptyWalletIcon" class="fas fa-times-circle"></i>
+    <p class="pt-2">Something went wrong <br>please check your internet connection</p>
+    <button id="goBack" class="btn btn-primary">Go back</button>
+    </div>`
+
+    handleGoBack()
+
+}
+
+const handleGoBack = () =>{
+    document.getElementById('goBack').addEventListener('click', () => {
+        const errContainer = document.getElementById('err')
+        errContainer.innerHTML = ''
+        const search = document.getElementById('searchField').value = ''
+        document.getElementById('search').classList.add('d-none')
+        document.getElementById('home').classList.remove('d-none')
+        })
+}
+
+const showSpinner = () =>{
+    const spinner = document.getElementById('spinner')
+    spinner.innerHTML = ` 
+    <div class="col pt-4 text-center text-white-50" id="emptyWallet">
+    <i id="spinnerIcon" class="fas fa-circle-notch rotate-center"></i>
+    <p class="pt-2">Searching</p>
+    </div>`
+}
+
+const hideSpinner = () =>{
+    const spinner = document.getElementById('spinner')
+    spinner.innerHTML = ''
 }

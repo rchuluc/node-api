@@ -2,6 +2,17 @@
     font-size: 3.5rem
 }
 
+#spinnerIcon{
+    font-size: 3.5rem;
+    background:-moz-linear-gradient(bottom, var(--blue) 0%, rgba(43,146,228, 0) 100%); 
+    background: -webkit-linear-gradient(bottom,  var(--blue) 0%, rgba(43,146,228, 0) 100%); 
+    background: linear-gradient(to top,  var(--blue) 0%, rgba(43,146,228, 0) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
+}
+
 #searchField{
     width: 40vw
 }
@@ -40,4 +51,29 @@ tbody > tr{
     transition: 250ms width ease-in, 300ms background ease-in;
 }
 
+.rotate-center {
+	-webkit-animation: rotate-center 1.5s linear infinite both;
+	        animation: rotate-center 1.5s linear infinite both;
+}
 
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
